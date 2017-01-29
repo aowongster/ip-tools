@@ -1,33 +1,59 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>some html page</title>
-  <meta name="description" content="Your content">
-  <meta name="author" content="you">
+    <title>some html page</title>
+    <meta name="description" content="Your content">
+    <meta name="author" content="you">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
 
-  <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+
+
 </head>
 
 <body>
-  <form action="#">
-  IPv4:<br>
-  <input type="text" name="ipv4" value="Mickey">
-  <br>
-  IPINT:<br>
-  <input type="text" name="ipint" value="Mouse">
-  IPv6:<br>
-  <input type="text" name="ipv6" value="Mouse">
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
+    <div>
 
-  <script src="js/scripts.js"></script>
+    </div>
+    <div>
+        <form action="#">
+            IPv4:<br>
+            <input id="ipv4" type="text" name="ipv4" value="8.8.8.8">
+            <button class="btn" data-clipboard-target="#ipv4">
+                <img src="assets/clippy.svg" alt="Copy to clipboard">
+            </button>
+
+            <br> IPINT:
+            <br>
+            <input id="ipint" type="text" name="ipint" value="8.8.8.8">
+            <button class="btn" data-clipboard-target="#ipint">
+                <img src="assets/clippy.svg" alt="Copy to clipboard">
+            </button>
+            <br> IPv6:
+            <br>
+            <input id="ipv6" type="text" name="ipv6" value="8.8.8.8">
+            <button class="btn" data-clipboard-target="#ipv6">
+                <img src="assets/clippy.svg" alt="Copy to clipboard">
+            </button>
+        </form>
+    </div>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
