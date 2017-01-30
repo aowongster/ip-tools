@@ -56,7 +56,7 @@ $('#ipgeo').on('input', function() {
 
 function fetchIpData(ip) {
   if (isValidIpAddress(ip)) {
-    $.get('http://freegeoip.net/json/' + ip, function(data) {
+    $.get('https://freegeoip.net/json/' + ip, function(data) {
       var jsonRes = JSON.stringify(data, undefined, 4)
       output(jsonRes);
     })
@@ -67,7 +67,7 @@ function fetchIpData(ip) {
 
 // on load initially populate the users data.
 $(document).ready(function() {
-  $.getJSON('http://freegeoip.net/json/?callback=?', function(data) {
+  $.getJSON('https://freegeoip.net/json/?callback=?', function(data) {
     var jsonRes = JSON.stringify(data, undefined, 4)
     var userIp = data.ip
 
