@@ -5,9 +5,9 @@
 <head>
     <meta charset="utf-8">
 
-    <title>some html page</title>
-    <meta name="description" content="Your content">
-    <meta name="author" content="you">
+    <title>Ip Tools</title>
+    <meta name="description" content="Ip Tools">
+    <meta name="author" content="Alistair Wong">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 
@@ -29,30 +29,51 @@
 
 <body>
     <div>
-
+      <h1>IP Tools</h1>
     </div>
     <div>
         <form action="#">
             IPv4:<br>
-            <input id="ipv4" type="text" name="ipv4" value="8.8.8.8">
-            <button class="btn" data-clipboard-target="#ipv4">
+            <input id="ipv4" type="text" name="ipv4" value="">
+            <button type="button" class="btn" data-clipboard-target="#ipv4">
                 <img src="assets/clippy.svg" alt="Copy to clipboard">
             </button>
 
             <br> IPINT:
             <br>
-            <input id="ipint" type="text" name="ipint" value="8.8.8.8">
-            <button class="btn" data-clipboard-target="#ipint">
+            <input id="ipint" type="text" name="ipint" value="">
+            <button type="button" class="btn" data-clipboard-target="#ipint">
                 <img src="assets/clippy.svg" alt="Copy to clipboard">
             </button>
-            <br> IPv6:
+
+            <br> IP Geo Lookup:
             <br>
-            <input id="ipv6" type="text" name="ipv6" value="8.8.8.8">
-            <button class="btn" data-clipboard-target="#ipv6">
+            <input id="ipgeo" type="text" name="ipgeo" value="">
+            <button class="btn" type="button" data-clipboard-target="#ipgeo">
                 <img src="assets/clippy.svg" alt="Copy to clipboard">
             </button>
+
         </form>
     </div>
+
+    <br>
+    <div>
+      <p id="userIp"></p>
+    </div>
+
+    <div>
+      <p>Ip data from <a href="http://freegeoip.net">http://freegeoip.net</a></p>
+    </div>
+
+    <div>
+        <h1>Your IP info details</h1>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous">
+    </script>
     <script src="js/scripts.js"></script>
 </body>
 
