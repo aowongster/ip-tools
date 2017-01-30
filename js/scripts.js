@@ -34,7 +34,8 @@ var isValidIpAddress = function(ipaddress) {
 
 // formats json appends to body
 function output(inp) {
-    document.body.appendChild(document.createElement('pre')).innerHTML = inp;
+    // document.body.appendChild(document.createElement('pre')).innerHTML = inp;
+    document.getElementById('ipInfo').innerHTML = inp;
 }
 
 // form watchers
